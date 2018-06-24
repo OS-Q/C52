@@ -4,16 +4,16 @@
 
 ## 描述
 
-主流32位MCU的主流实时系统，基于实时系统的统一应用层封装
+高性能嵌入式设备，基于Linux平台
 
 ## 组成
 
-- M4: freeRTOS 系统
-- M5: Keil-RTX 系统
-- M6: uCOS III 系统
+- M4: raspain
+- M5: sunxi
+- M6: openwrt
 
 ## 说明
 
-OS-Q2项目主要针对ARM cortex-M处理器和MIPS处理器，为实现多任务的统一调度和和应用层代码统一封装复用。
+OS-Q2项目针对高性能边缘计算平台，主要包括Linux内核的嵌入式设备。
 
-![Q2 Logo](docs/R2.png)
+![Q2 Logo](docs/Q2.png)
