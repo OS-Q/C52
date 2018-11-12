@@ -1,21 +1,20 @@
-# OS：Q2
+﻿# [ESP32](https://github.com/qitas/ESP32) 
 
-[![sites](docs/Q.png)](http://qitas.cn)
+### qitas@qitas.cn
 
-## 描述
+---
 
-边缘计算节点，嵌入式设备，通常基于ARM芯片和Linux系统组合平台，具有较强的离线算力，标配互联网和物联网通信能力
+## 简介
+
+基于ESP32的WiFi和BT功能，实现相关媒体播放功能
+
+---
 
 ## 组成
 
-- M4: 高度集成的SOC，芯片内部集成RAM更甚至FLASH，可部署嵌入式系统，可以作为MQTT通信客户端和处理音频
-- M5: 高性价比视觉平台，例如树莓派3B+，4核处理器（1-2GHz）+1G RAM，可部署opencv处理图像
-- M6: 高性能边缘计算平台，例如RK3399，大于2G RAM，可部署tensorflow和caffe等模型
 
-## 说明
+---
 
-OS-Q2项目针对高性能边缘计算平台，主要包括Linux内核的嵌入式设备
+## 为锻造最美之器
 
-- 当前项目下主要包括树莓派相关内容，后续增加全志和瑞星微相关
-
-![Q2 Logo](docs/Q2.png)
+[![sites](qitas/qitas.png)](http://www.qitas.cn)
