@@ -22,26 +22,7 @@ nobase_dist_pkgdata_DATA = $(verbatim_data) paths.sh
 # ct-ng, as renamed by the installation
 ctng_progname		= `echo ct-ng | sed '$(transform)'`
 
-USER_MANUAL_FILES = \
-	docs/manual/1_Introduction.md \
-	docs/manual/2_Installation.md \
-	docs/manual/3_Configuration.md \
-	docs/manual/4_Building.md \
-	docs/manual/5_Toolchain_Usage.md \
-	docs/manual/6_Toolchain_Types.md \
-	docs/manual/7_Contributing.md \
-	docs/manual/8_Internals.md \
-	docs/manual/9_Toolchain_Construction.md \
-	docs/manual/A_Credits.md \
-	docs/manual/B_Known_issues.md \
-	docs/manual/C_Setup_OS.md \
-	docs/manual/D_Tutorials_features.md
 
-if INSTALL_USER_MANUAL
-doc_DATA		= $(USER_MANUAL_FILES)
-else
-doc_DATA		= docs/MANUAL_ONLINE
-endif
 
 do_subst		= ( @SED@ \
 			-e 's,[@]docdir[@],$(docdir),g' \
@@ -72,6 +53,3 @@ endif
 
 uninstall-hook:
 	rm -f $(DESTDIR)$(man1dir)/$(ctng_progname).1.gz
-
-dist-hook: maintainer/download-docs.sh
-	$< $(top_distdir) $(USER_MANUAL_FILES)
