@@ -38,10 +38,10 @@ before_script:
 
 # Configure crosstool-NG
 .build_ctng: &build_ctng |
-  ./bootstrap
-  ./configure --enable-local
+  sudo bash ./bootstrap
+  sudo bash ./configure --enable-local
   make
-  ./ct-ng ${CONF_TARGET}
+  sudo bash ./ct-ng ${CONF_TARGET}
 
 # ct-ng options common for all platforms
 .configure_common: &configure_common |
@@ -410,7 +410,7 @@ esp8266-rpi-test:
     - source add_path.sh
     - cd ${IDF_PATH}/examples/get-started/hello_world
     - idf.py build
-    
+
 
 .template_compiler_tests:
   stage: test

@@ -1,7 +1,8 @@
 # Using container-based infrastructure
 dist: trusty
-sudo: false
-
+sudo: true
+git:
+    depth: 1
 # 'bash' will define a generic environment without interfering environment
 # settings like "CC=gcc"
 language: bash
@@ -30,8 +31,8 @@ addons:
 
 # Building crosstool-NG core
 install:
-    - ./bootstrap
-    - ./configure --enable-local
+    - sudo bash ./bootstrap
+    - sudo bash ./configure --enable-local
     - make
 
 # Here is the list of all the standard samples tracked
