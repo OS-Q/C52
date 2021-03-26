@@ -33,7 +33,7 @@ addons:
 install:
     - sudo bash ./bootstrap
     - sudo bash ./configure --enable-local
-    - make
+    - sudo make
 
 # Here is the list of all the standard samples tracked
 # by the continuous integration system
